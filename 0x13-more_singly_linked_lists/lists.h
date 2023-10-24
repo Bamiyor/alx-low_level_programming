@@ -4,12 +4,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * struct listint_t - self referencial struct
- * for creating nodes of a singly linked list
+ * struct listint_s - singly linked list
+ * @n : integer
+ * @next : points to the next nodes
  *
- * @n: integer data
- * @next: self referencial pointer 
- * pointer to the next node of a list
+ * Description : singly linked list node structure
+ * for alx project
  */
 typedef struct listint_s
 {
