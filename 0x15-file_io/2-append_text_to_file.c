@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
  * append_text_to_file - Appends text at the end of a file.
@@ -26,13 +24,19 @@ return (-1);
 if (text_content)
 {
 for (nletters = 0; text_content[nletters]; nletters++)
-	;
+;
 
 rwr = write(fd, text_content, nletters);
 
 if (rwr == -1)
 {
 close(fd);
+return (-1);
+}
+}
+
+close(fd);
 
 return (1);
 }
+
